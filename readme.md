@@ -10,7 +10,7 @@ Endpoints are defined by creating instances of the `Endpoint` class with appropr
 
 ## Project Structure
 
-The project consists of a single Python script: `testEndpoint.py`. 
+The project consists of an `Endpoints.py` Python script and a test folder with a `testEndpoints.py` script. The `Endpoints.py` script contains the `Endpoint` class, which is used to define endpoints. The `testEndpoints.py` script contains a main function that creates, runs, and stores an example endpoint.
 
 ## How to Run
 
