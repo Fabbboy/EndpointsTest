@@ -4,7 +4,7 @@ This is a simple yet powerful tool written in Python for testing API endpoints. 
 
 ## Setup and Usage
 
-To use the API Test Tool, ensure your API server is active. The tool currently targets `http://127.0.0.1:8000` by default. If your server is running on a different address, adjust the `baseAddress` variable in the `testEndpoints.py` script accordingly.
+To use the API Test Tool, ensure your API server is active. The tool currently targets `http://127.0.0.1:8000` by default. If your server is running on a different address, adjust the `baseAddress` variable in the `Endpoints.py` script accordingly.
 
 Endpoints are defined by creating instances of the `Endpoint` class with appropriate parameters (HTTP method, payload for POST requests, endpoint address, and query parameters for GET requests). These instances can be run and their configuration can be saved for future reference using the `runEndpoint` and `storeEndpoint` functions respectively.
 
