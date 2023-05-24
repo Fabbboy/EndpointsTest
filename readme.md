@@ -8,10 +8,6 @@ To use the API Test Tool, ensure your API server is active. The tool currently t
 
 Endpoints are defined by creating instances of the `Endpoint` class with appropriate parameters (HTTP method, payload for POST requests, endpoint address, and query parameters for GET requests). These instances can be run and their configuration can be saved for future reference using the `runEndpoint` and `storeEndpoint` functions respectively.
 
-## Project Structure
-
-The project consists of an `Endpoints.py` Python script and a test folder with a `testEndpoints.py` script. The `Endpoints.py` script contains the `Endpoint` class, which is used to define endpoints. The `testEndpoints.py` script contains a main function that creates, runs, and stores an example endpoint.
-
 ## How to Run
 
 To run the tool, use the following command in your terminal:

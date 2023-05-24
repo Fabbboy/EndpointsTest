@@ -49,6 +49,16 @@ class Endpoint:
             response = requests.post(endpoint.buildRequest(), json=endpoint.payload)
         print(response.text)
 
+def loadEndpoint(address):
+    filePath = "endpoints/" + address.replace("/", "_") + ".json"
+
+    if not os.path.exists(filePath):
+        raise Exception("Endpoint not found")
+
+    with open(filePath, "r") as f:
+        data = json.loads(f.read())
+        return Endpoint(data["method"], data["payload"], data["address"], data["queryArgs"])
+
 
 def setup():
     if not os.path.exists("endpoints"):
